@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import styles from '../styles/Home.module.css';
 
-interface SupProps {
+interface ProductProps {
   message: string;
 }
 
@@ -15,7 +15,7 @@ const useStyles = makeStyles(() =>
   })
 );
 
-const Sup: FC<SupProps> = ({ message }: SupProps) => {
+const Product: FC<ProductProps> = ({ message }: ProductProps) => {
   const classes = useStyles();
   return (
     <div className={styles.container}>
@@ -30,9 +30,9 @@ const Sup: FC<SupProps> = ({ message }: SupProps) => {
 export const getServerSideProps = () => {
   return {
     props: {
-      message: 'sup',
+      message: 'product',
     },
   };
 };
 
-export default Sup;
+export default Product;

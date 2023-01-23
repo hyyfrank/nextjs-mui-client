@@ -7,9 +7,12 @@ const Home: FC = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Demo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <body>
+        <h1>Home Page</h1>
+      </body>
     </div>
   );
 };
